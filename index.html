@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>A simple dungeon generator</title>
+		<!-- CSS -->
+		<style>
+			#canvas {
+				border: 1px solid;
+			}
+			
+			.wrapper {
+				display: inline;
+			}
+			
+			#canvasWrapper {
+				float: left;
+			}
+			
+			#statCounters {
+				float: left;
+				border: 1px solid;
+				padding: 0 3em 0 3em;
+				font-family: monospace;
+				font-size: 1.1em;
+				color: #172946;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="wrapper" id="canvasWrapper">
+				<canvas id="canvas" width="500px" height="500px">
+				You do not seem to have a browser capable of running canvases.
+				</canvas>
+			</div>
+			<div class="wrapper" id="statCounters">
+				<p id="waveCounter">Wave #1</p>
+				<p id="playerKills">Player Kills: 0</p>
+				<p id="playerLives">Player Lives: 5</p>
+				<p id="playerBombs">Player Bombs: 3</p>
+				<p id="boss1"></p>
+				<p id="boss2"></p>
+			</div>
+		</div>
+		
+		<!-- Scripts -->
+		<script src="assets/bluhbluh_bullets.js"></script>
+	</body>
+</html>
